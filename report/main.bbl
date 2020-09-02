@@ -20,4 +20,16 @@ How are crypto prices determined?
 \newblock
   https://coinrivet.com/guides/what-is-cryptocurrency/how-cryptocurrencies-maintain-their-prices/.
 
+\bibitem{perp}
+Deribit perpetual.
+\newblock https://www.deribit.com/pages/docs/perpetual.
+
+\bibitem{fut}
+Deribit furtures.
+\newblock https://www.deribit.com/pages/docs/futures.
+
+\bibitem{liq}
+Liquidation.
+\newblock https://insights.deribit.com/education/liquidation.
+
 \end{thebibliography}
