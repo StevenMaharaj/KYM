@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.4.8)  2 SEP 2020 17:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.4.8)  4 SEP 2020 02:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -124,6 +124,26 @@ File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 \Gin@req@height=\dimen112
 \Gin@req@width=\dimen113
 )
+(/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2016/04/27 v1.618033 publication quality tables
+\heavyrulewidth=\dimen114
+\lightrulewidth=\dimen115
+\cmidrulewidth=\dimen116
+\belowrulesep=\dimen117
+\belowbottomsep=\dimen118
+\aboverulesep=\dimen119
+\abovetopsep=\dimen120
+\cmidrulesep=\dimen121
+\cmidrulekern=\dimen122
+\defaultaddspace=\dimen123
+\@cmidla=\count100
+\@cmidlb=\count101
+\@aboverulesep=\dimen124
+\@belowrulesep=\dimen125
+\@thisruleclass=\count102
+\@lastruleclass=\count103
+\@thisrulewidth=\dimen126
+)
 (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2010/09/12 v5.6 Page Geometry
 
@@ -137,17 +157,17 @@ Package ifvtex Info: VTeX not detected.
 (/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-\Gm@cnth=\count100
-\Gm@cntv=\count101
-\c@Gm@tempcnt=\count102
-\Gm@bindingoffset=\dimen114
-\Gm@wd@mp=\dimen115
-\Gm@odd@mp=\dimen116
-\Gm@even@mp=\dimen117
-\Gm@layoutwidth=\dimen118
-\Gm@layoutheight=\dimen119
-\Gm@layouthoffset=\dimen120
-\Gm@layoutvoffset=\dimen121
+\Gm@cnth=\count104
+\Gm@cntv=\count105
+\c@Gm@tempcnt=\count106
+\Gm@bindingoffset=\dimen127
+\Gm@wd@mp=\dimen128
+\Gm@odd@mp=\dimen129
+\Gm@even@mp=\dimen130
+\Gm@layoutwidth=\dimen131
+\Gm@layoutheight=\dimen132
+\Gm@layouthoffset=\dimen133
+\Gm@layoutvoffset=\dimen134
 \Gm@dimlist=\toks22
 )
 (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
@@ -158,31 +178,31 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 (./Technical.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count103
-\scratchdimen=\dimen122
+\scratchcounter=\count107
+\scratchdimen=\dimen135
 \scratchbox=\box28
-\nofMPsegments=\count104
-\nofMParguments=\count105
+\nofMPsegments=\count108
+\nofMParguments=\count109
 \everyMPshowfont=\toks23
-\MPscratchCnt=\count106
-\MPscratchDim=\dimen123
-\MPnumerator=\count107
-\makeMPintoPDFobject=\count108
+\MPscratchCnt=\count110
+\MPscratchDim=\dimen136
+\MPnumerator=\count111
+\makeMPintoPDFobject=\count112
 \everyMPtoPDFconversion=\toks24
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -270,11 +290,11 @@ e
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 12.
+LaTeX Font Info:    Try loading font information for U+msa on input line 13.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 12.
+LaTeX Font Info:    Try loading font information for U+msb on input line 13.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -319,20 +339,39 @@ Package pdftex.def Info: fig/vol.png  used on input line 180.
 
  (./Statistics.tex
 Chapter 3.
+<fig/range.png, id=36, 1156.32pt x 867.24pt>
+File: fig/range.png Graphic file (type png)
+<use fig/range.png>
+Package pdftex.def Info: fig/range.png  used on input line 30.
+(pdftex.def)             Requested size: 435.32422pt x 326.48457pt.
+<fig/vol_dist.png, id=37, 1156.32pt x 867.24pt>
+File: fig/vol_dist.png Graphic file (type png)
+<use fig/vol_dist.png>
+Package pdftex.def Info: fig/vol_dist.png  used on input line 50.
+(pdftex.def)             Requested size: 435.32422pt x 326.48457pt.
+
+Overfull \hbox (3.18361pt too wide) in paragraph at lines 54--55
+\OT1/cmr/m/n/10 We will de-fine vol-ume be-low the 25th per-centile to have low
+ vol-ume. Thus, a day with vol-ume be-low 5.343518e+04
+ []
+
 [7
 
 
 
-]
-Overfull \vbox (49.81927pt too high) has occurred while \output is active []
-
-
-[8]) [9]
+] [8 <./fig/range.png> <./fig/vol_dist.png>]
+<fig/rday.png, id=47, 1156.32pt x 867.24pt>
+File: fig/rday.png Graphic file (type png)
+<use fig/rday.png>
+Package pdftex.def Info: fig/rday.png  used on input line 82.
+(pdftex.def)             Requested size: 435.32422pt x 326.48457pt.
+ [9 <./fig/rday.png>]) [10]
+[11]
 \openout2 = `Fundamental.aux'.
 
  (./Fundamental.tex
 Chapter 4.
-) [10
+) [12
 
 
 
@@ -341,7 +380,7 @@ Chapter 4.
 
  (./Technical.tex
 Chapter 5.
-) [11
+) [13
 
 
 
@@ -349,7 +388,7 @@ Chapter 5.
 Overfull \vbox (337.52754pt too high) has occurred while \output is active []
 
 
-[12] (./main.bbl
+[14] (./main.bbl
 Overfull \hbox (19.9819pt too wide) in paragraph at lines 8--11
 []\OT1/cmr/m/n/10 Ethereum trad-ing in 2020 - unique op-por-tu-nity.  https://w
 ww.avatrade.com.au/forex/cryptocurrencies/ethereum,
@@ -361,30 +400,31 @@ Underfull \hbox (badness 4156) in paragraph at lines 19--22
 ides/what-is-cryptocurrency/how-
  []
 
-) [13
+) [15
 
 
 ] (./main.aux (./Introduction.aux) (./Background.aux) (./Statistics.aux)
 (./Fundamental.aux) (./Technical.aux)) ) 
 Here is how much of TeX's memory you used:
- 3031 strings out of 494880
- 40646 string characters out of 6179602
- 106633 words of memory out of 5000000
- 6262 multiletter control sequences out of 15000+600000
- 13654 words of font info for 53 fonts, out of 8000000 for 9000
+ 3108 strings out of 494880
+ 41710 string characters out of 6179602
+ 107391 words of memory out of 5000000
+ 6331 multiletter control sequences out of 15000+600000
+ 13822 words of font info for 54 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 41i,6n,25p,455b,248s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,6n,25p,474b,250s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/ty
 pe1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
 blic/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
 msfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
 s/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
 r12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb
-></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on main.pdf (14 pages, 395738 bytes).
+></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on main.pdf (16 pages, 855950 bytes).
 PDF statistics:
- 83 PDF objects out of 1000 (max. 8388607)
- 55 compressed objects within 1 object stream
+ 99 PDF objects out of 1000 (max. 8388607)
+ 62 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
 
