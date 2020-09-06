@@ -8,44 +8,44 @@ A level-1 auxiliary file: Fundamental.aux
 A level-1 auxiliary file: Technical.aux
 The style file: unsrt.bst
 Database file #1: ref.bib.bib
-You've used 7 entries,
+You've used 8 entries,
             1791 wiz_defined-function locations,
-            475 strings with 4257 characters,
-and the built_in function-call counts, 732 in all, are:
-= -- 58
-> -- 7
+            480 strings with 4348 characters,
+and the built_in function-call counts, 838 in all, are:
+= -- 67
+> -- 8
 < -- 0
-+ -- 7
++ -- 8
 - -- 0
-* -- 8
-:= -- 74
-add.period$ -- 14
-call.type$ -- 7
-change.case$ -- 7
+* -- 11
+:= -- 84
+add.period$ -- 16
+call.type$ -- 8
+change.case$ -- 8
 chr.to.int$ -- 0
-cite$ -- 7
-duplicate$ -- 35
-empty$ -- 127
+cite$ -- 8
+duplicate$ -- 40
+empty$ -- 145
 format.name$ -- 0
-if$ -- 192
+if$ -- 220
 int.to.chr$ -- 0
-int.to.str$ -- 7
+int.to.str$ -- 8
 missing$ -- 0
-newline$ -- 31
+newline$ -- 35
 num.names$ -- 0
-pop$ -- 44
+pop$ -- 51
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 38
+skip$ -- 42
 stack$ -- 0
 substring$ -- 0
-swap$ -- 7
+swap$ -- 8
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
 while$ -- 0
-width$ -- 8
-write$ -- 53
+width$ -- 9
+write$ -- 61

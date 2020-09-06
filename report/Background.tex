@@ -236,8 +236,48 @@ For BTC the maintenance margin starts with 0.525\% and linearly increases by 0.5
 Maintenance Margin= 0.525\% + (Position Size in BTC) * 0.005\%
 
 \section{ Explain the difference between Deribit and Bitmex indices.}
+BitMEX indices are composite, meaning that they are calculated using a number of data sources. BitMEX currently has 12 data sources: Binance, Binance US, Bitstamp, Bittrex, Coinbase, Gemini, Huobi, Itbit, Kraken, LBank, OKEX, Poloniex of which 11 are currently active in the indices. The BitMEX index weights are computed using volume data.
+
+The Deribit indices are made up of the latest prices from Bitstamp, Gemini, Bitfinex, Bittrex,  Itbit, Coinbase, LMAX Digital and Kraken. Deribit excludes all disconnected, administratively turned off and having detected invalid data. Then, the values from remaining sources are sort, truncated to the 0.5\% margin around the median price and averaged with equal weight.
+
+In summary debit indices are weighted equally while bitmex indices are weighted by volume.
+
+    
+\section{ What is DeFi and what are the lead applications.}
+
+Ethereum consists of three layers: the base layer is where transactions occur  and miners are compensated with ether. The second layer is the software layer this is where smart contracts reside. The third layer is the application layer where developers can submit and launch applications but in order to run these applications on the ethereum network they need to pay ether this is known as gas. 
+
+DeFi stands for decentralized finance. Defi seeks to transform the current financial system into a more trustworthy system. Defi is built on the ethereum network which is a programmable blockchain. 
+
+There are five main components of DeFi. These are stablecoins, exchanges, money markets synthetics and insurance. 
+
+Stablecoins such as tether or Dai are meant to mimic the price of stable currencies such the US dollar.  Stablecoins act as a bridge between newer cryptocurrency markets and traditional fiat currencies. Since cryptocurrencies are extremely volatile one can hedge out risk of volatility by holding a stablecoin.
+
+
+Exchanges in Defi are commonly referred to as DEX. Participants are able to exchange cryptocurrencies without intermediate parties. On Dex exchanges like kyber Network or uni swap  Custodial risk is minimised, there is more privacy and control for participants and swap fees are relatively small. Uniswap offers other services in addition to exchanging cryptocurrency. Participants may pool their cryptocurrencies in order to earn interest or send other users different cryptocurrencies from the ones they currently hold.
+
+Money markets allow for the lending and borrowing of money. Participants can lend their cryptocurrency in exchange for interest. Defi money markets such as compound use a lending pool model.   In this model participants pool their money together then the sum total can be given to a borrower while lenders earn interest. Defi money markets are transparent thus, the public can view the amount of loans from a money pool. This ensures the liquidity pool is over collateralized, that is there is more than enough cryptocurrency backing the outstanding loans. 
+
+Synthetics are assets designed to behave like other assets. Common synthetic are derivatives (derived from the underlying price these include options swaps and futures contracts).  Synthetics allow for the possibility of customisable risk exposure or hedging. 
+
+Insurance is used to mitigate risk and protect people from certain types of losses. Defi insurance acts as a safeguard against hacks, glitches or bugs in a cryptocurrency network.
+
+\section{ If you buy 100.000 bitmex contracts for Ethereum how much is that in \$?}
+
+\begin{itemize}
+\item as of writing this report the ETHUSD price is 354.45
+\item each contract is worth 0.001 mXBT per 1 USD or 0.000001 XBT per 1 USD
+\item so if you buy 100 ETH contracts it is worth $ 100 * 0.000001 *354.45 =0.035445 $ dollars
+\end{itemize}
+
     
     
-    \section{ What is DeFi and what are the lead applications.}
-    \section{ If you buy 100.000 bitmex contracts for Ethereum how much is that in \$?}
-    \section{ What is a stop limit and what is a stop market order? Give an example of when and how each can be used.}
+\section{ What is a stop limit and what is a stop market order? Give an example of when and how each can be used.}
+    
+    In order to answer this question we're assuming you're in a long position and want to get out by selling.
+
+A market stop order is set at a specific price. If the price falls below or to the specified price it will trigger. However market stop orders do not protect the trader from a gap in price. 
+
+A stop limit order has two components.  A stop price, this is where the order will be triggered and a limit price which is the lowest price you are willing to sell the asset. 
+
+For example, suppose you buy a cryptocurrency for \$400. And you said a stop market order at \$350.  During the day the exchange site goes down  and on reopen the price is now at \$300.  your market stop order would be triggered and unfortunately you would have sold your cryptocurrency for \$300 instead of \$350.  In contrast if you had set a stop limit order,  if the price had gapped down to \$300 the stop would not have been triggered if the stock price were set at \$350. 
