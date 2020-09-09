@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{eth}
 Ethereum.
@@ -32,8 +32,23 @@ Deribit furtures.
 Liquidation.
 \newblock https://insights.deribit.com/education/liquidation.
 
+\bibitem{tr}
+Jennifer Rudden.
+\newblock Average number of daily cryptocurrency transactions in 2nd quarter of
+  2020, by type.
+\newblock
+  https://www.statista.com/statistics/730838/number-of-daily-cryptocurrency-transactions-by-type,
+  Aug 2020.
+
 \bibitem{rri}
 Risk-on risk-off.
 \newblock https://www.investopedia.com/terms/r/risk-on-risk-off.asp, Mar 2020.
+
+\bibitem{op}
+JARED WOODARDDE.
+\newblock How options expiration affects stock prices.
+\newblock
+  https://www.thestreet.com/investing/how-options-expiration-affects-stock-prices-11346823,
+  Dec 2011.
 
 \end{thebibliography}

@@ -25,7 +25,7 @@ min         0.100000
 max       433.570000
 \end{verbatim}
 The average daily range is 21.331188. Figure \ref{fig:range} shows the range distribution.
-\begin{figure}
+\begin{figure}[H]
 \center
 \includegraphics[width=0.9\textwidth]{fig/range.png}
 \caption{Range distribution}
@@ -46,7 +46,7 @@ min      7.867300e-01
 max      1.322283e+06
 \end{verbatim}
 The average daily Volume is 1.333461e+05. Figure \ref{fig:vol_dist} shows the volume distribution.
-\begin{figure}
+\begin{figure}[H]
 \center
 \includegraphics[width=0.9\textwidth]{fig/vol_dist.png}
 \caption{Volume distribution}
@@ -79,7 +79,7 @@ Thus the average weekend range
 $$\frac{17.675291+ 19.148206}{2} = 18.4117485$$
 
 In addition we plot the boxplots of ranges per day give by Figure \ref{fig:rday}. There is no evidence to suggest weekends range more. 
-\begin{figure}
+\begin{figure}[H]
 \center
 \includegraphics[width=0.9\textwidth]{fig/rday.png}
 \caption{Range box plots by day}
@@ -175,7 +175,7 @@ plt.show()
 
 
 
-\begin{figure}
+\begin{figure}[H]
 \center
 \includegraphics[width=0.9\textwidth]{fig/atr.png}
 \caption{14 period ATR for 3 years of hourly data on ETHUSD}
@@ -197,7 +197,7 @@ min         -0.196000
 max          0.183455
 \end{verbatim}
 
-\begin{figure}
+\begin{figure}[H]
 \center
 \includegraphics[width=0.9\textwidth]{fig/ret.png}
 \caption{Returns for 3 years of hourly data on ETHUSD}
@@ -501,13 +501,149 @@ True     0.491935
 \end{verbatim}
 So on moves greater than 1SD 51\% of the time the market moves down while 49\% of the time the market moves up.
 \section{ How does the market move when it is $>5  \%  $ move in a day}
+We consider the re sampled daily data. Figure \ref{fig:pctc} is the distribution the absolute percent change. We mark the 5 and 10 percent points.
+
+\begin{figure}[H]
+\center
+\includegraphics[width=0.9\textwidth]{fig/pctc.png}
+\caption{Absolute percent change for daily data}
+\label{fig:pctc}
+\end{figure}
+ 
+We filter days by moves between 5 an 10 percent. For those days we have the following summary statistics.
+
+\begin{tabular}{lrrrrrr}
+\toprule
+{} &          low &         high &         open &        close &        volume &     returns \\
+\midrule
+count &   160.000000 &   160.000000 &   160.000000 &   160.000000 &    160.000000 &  160.000000 \\
+mean  &   393.254607 &   401.924226 &   397.955906 &   397.938922 &  10313.270548 &   -0.014387 \\
+std   &   298.040808 &   305.717916 &   302.348791 &   302.372059 &   5178.683033 &    1.669869 \\
+min   &    91.986250 &    93.544167 &    92.605833 &    92.745833 &   2646.986398 &   -7.903750 \\
+25\%   &   182.481563 &   185.088958 &   183.830833 &   183.794271 &   6730.351709 &   -0.531250 \\
+50\%   &   276.966875 &   282.016250 &   279.603958 &   280.097917 &   9324.437458 &    0.068333 \\
+75\%   &   522.655104 &   533.031354 &   528.920313 &   527.474896 &  12478.833113 &    0.532396 \\
+max   &  1347.235833 &  1377.132500 &  1366.006250 &  1363.753333 &  31125.085513 &    4.875833 \\
+\bottomrule
+\end{tabular}
+\vspace{1cm}\\
+We also calculate the most common day of the month and day of the week for a move between 5 and 10 percent.
+\vspace{1cm}\\
+\begin{tabular}{lrr}
+\toprule
+{} &  day\_of\_month &  day \\
+\midrule
+0 &          23.0 &  3.0 \\
+\bottomrule
+\end{tabular}
 \section{ How does the market move when its $>10 \% $ in a day}
+We repeat the same analysis but for moves greater than 10 percent.
+\vspace{1cm}\\
+\begin{tabular}{lrrrrrr}
+\toprule
+{} &          low &         high &         open &        close &        volume &    returns \\
+\midrule
+count &    41.000000 &    41.000000 &    41.000000 &    41.000000 &     41.000000 &  41.000000 \\
+mean  &   352.536433 &   366.085457 &   359.722541 &   359.313923 &  19272.578006 &  -0.416596 \\
+std   &   282.334042 &   295.841460 &   289.756459 &   288.996099 &  10841.346712 &   3.194639 \\
+min   &    88.517083 &    91.353333 &    90.230417 &    89.629583 &   7716.548928 & -10.818750 \\
+25\%   &   160.810833 &   164.762500 &   162.386667 &   162.990833 &  11806.177713 &  -1.111250 \\
+50\%   &   224.170833 &   230.869583 &   228.202083 &   227.710417 &  16902.097708 &   0.010833 \\
+75\%   &   534.257917 &   547.426667 &   542.708333 &   539.067500 &  22731.665617 &   0.795417 \\
+max   &  1114.007083 &  1144.463750 &  1130.869167 &  1133.618333 &  66780.561746 &   7.758333 \\
+\bottomrule
+\end{tabular}
+\vspace{1cm}\\
+Notice that there's a big difference between the 75 percent and the hundred percent quantile of volume. This implies that as moves become more extreme the returns and the volume become more exponentially extreme. 
+
+The most common day of the month and day of the week for a move greater than 10 percent.
+\vspace{0.5cm}\\
+
+\begin{tabular}{lrr}
+\toprule
+{} &  day\_of\_month &  day \\
+\midrule
+0 &          15.0 &  4.0 \\
+\bottomrule
+\end{tabular}
 \section{ How does it move when its under $<5 \% $?}
+We repeat the same analysis but for moves less than 5 percent.
+\vspace{0.5cm}\\
+\begin{tabular}{lrrrrrr}
+\toprule
+{} &          low &         high &         open &        close &        volume &     returns \\
+\midrule
+count &   899.000000 &   899.000000 &   899.000000 &   899.000000 &    899.000000 &  899.000000 \\
+mean  &   293.647002 &   297.290324 &   295.549123 &   295.579857 &   4807.769736 &    0.031466 \\
+std   &   201.763226 &   205.377567 &   203.713711 &   203.762793 &   3447.003381 &    0.687126 \\
+min   &    82.847917 &    83.723750 &    83.414583 &    83.293333 &    725.863348 &   -5.000417 \\
+25\%   &   168.759792 &   170.563542 &   169.801250 &   169.625000 &   2586.147062 &   -0.144891 \\
+50\%   &   223.373750 &   225.083333 &   224.404167 &   224.436667 &   3916.392366 &    0.011250 \\
+75\%   &   317.486875 &   321.048750 &   319.219583 &   319.338333 &   5954.465718 &    0.198125 \\
+max   &  1311.549583 &  1339.132500 &  1328.027500 &  1329.035833 &  32320.300813 &    6.276250 \\
+\bottomrule
+\end{tabular}
+\vspace{0.5cm}\\
+The most common day of the month and day of the week for a move less than 5 percent.
+\vspace{0.5cm}\\
+\begin{tabular}{lrr}
+\toprule
+{} &  day\_of\_month &  day \\
+\midrule
+0 &           4.0 &  6.0 \\
+\bottomrule
+\end{tabular}\begin{tabular}{lrr}
+\toprule
+{} &  day\_of\_month &  day \\
+\midrule
+0 &           4.0 &  6.0 \\
+\bottomrule
+\end{tabular}
 \section{ What are the days before and after like of both $>5 \% $ and $<5 \% $ and $> 10 \% $}
+This will be analysed further in the technical section but in general big moves are preceded by small volume or ranging markets. Once a big move has occurred generally the market will go back to ranging.
+For extraordinarily big moves there is usually a correction. For example in December 2017 the price shot up but around early 2018 it dumped back to the same level.
 \section{ Does it tend to trend or range more?}
-fdlgjlskdjgvsdgvdsvsadvfgasdvf
+From Figure \ref{fig:pctc} we see that there is more mass in the area below 5\% so markets are ranging more often than trending.
 \section{ Do stationary test}
+We use the ADF test from the python stats model package. We seek a 95\% significance level.
+
+\begin{verbatim}
+p value for hourly close 0.37742176859100934 likely not stationary
+p value for hourly returns 0.0 likely stationary
+p value for hourly this year close 0.9879970913768994 likely not stationary
+p value for hourly close from aug 1 0.4431708128652189 likely not stationary
+\end{verbatim}
+
 \section{If you used the POC as the fair value for the next trading day, how often does price come back to test this area? (Point of Control)}
+We separate the data by days and use the following algorithm to find the POC of each day.
+
+\begin{verbatim}
+POC = np.zeros(len(list_by_date))
+for i in range(len(list_by_date)):
+    a,b = np.histogram(list_by_date[i]["close"],weights=list_by_date[i]["volume"])
+    idx = a.argmax()
+    POC[i] = (b[idx] + b[idx+1])/2
+POC
+\end{verbatim}
+We find
+
+\begin{verbatim}
+68.9108910891089% of the time price comes back to the POC the next trading day
+\end{verbatim}
 \section{Does over average in volume generally relate to bigger price movements? Does this generally last for more then one day?}
+Yes this is further dressed in the technical section. We will find that there is a high correlation between returns and volume. Volume spikes are short lived and last for 1 or 2 days.  After the spike, the price usually corrects itself or  ranges for the next week.
 \section{Average transactions on the network per day}
+
+Figure \ref{fig:trans} \cite{tr} show daily average transactions for several cryptos during Q2 of 2020. Last quarter ETH did 866400 transactions on average per day  .
+
+
+\begin{figure}[H]
+\center
+\includegraphics[width=0.9\textwidth]{fig/trans.png}
+\caption{Average daily transactions}
+\label{fig:trans}
+\end{figure}
+
 \section{Does increase in transactions increase demand and price?}
+
+The more transactions a cryptocurrency does the more people believe in the technology so it's likely that in the future the price will rise.  However for big sudden spikes in transactions it could be worrying.  For example the founder of Sushi swap cashed in a lot of Sushi for ETH which made the price fall quite dramatically.

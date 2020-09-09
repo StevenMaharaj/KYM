@@ -312,7 +312,41 @@ Figure \ref{fig:vwap} shows VWAP on the 1 min chart
 \end{figure}
 
 \section{ Are the euro sessions more prone to reverse or continue the move?}
+To answer this question we will investigate stationarity of closing prices in the Euro and us session.
+
+To find the gradient of each we use the following algorithm
+
+\begin{verbatim}
+m_euro = np.zeros(len(list_by_date_euro))
+for i in range(len(list_by_date_euro)):
+    X = np.array(range(len(list_by_date_euro[i]["close"])))
+    X_bar = X.mean()
+    X_bar
+    Y = list_by_date_euro[i]["close"].values
+    Y_bar = Y.mean()
+    m_euro[i] = np.sum((X - X_bar)* (Y - Y_bar))/np.sum((X - X_bar)**2)
+\end{verbatim}
+
+Figure \ref{fig:grad_euro} show the distribution of gradients for the Euro session 
+
+\begin{figure}[H]
+\center
+\includegraphics[width=0.9\textwidth]{fig/grad_euro.png}
+\caption{Gradient distribution for the Euro session}
+\label{fig:grad_euro}
+\end{figure}
+The further away gradients are from 0 the more likely price trended.
 \section{ Are the usa sessions more prone to reverse or continue the move?}
+We perform the same analysis for the usa session.
+
+From Figure \ref{fig:grad_usa} we can conclude that there are more extreme down with trends during the US session.
+\begin{figure}[H]
+\center
+\includegraphics[width=0.9\textwidth]{fig/grad_usa.png}
+\caption{Gradient distribution for the USA session}
+\label{fig:grad_usa}
+\end{figure}
+
 \section{ How responsive is the market to current SFL levels? (tradingview)}
 SFL levels include Daily weekly monthly or yearly open and closed. From observation I found that SFL levels work best with line charts. 
 
